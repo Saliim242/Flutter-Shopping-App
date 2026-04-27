@@ -117,25 +117,25 @@ By completing this assignment, students will learn:
 <br/><b>🏠 Home Screen</b>
 </td>
 <td align="center">
-<img src="https://github.com/user-attachments/assets/1685f0f5-04a8-4a0d-8746-9b2414545a00" width="260"/>
-<br/><b>🛍️ Product Catalog</b>
+<img src="https://github.com/user-attachments/assets/6edca6c7-de4b-45ca-b781-7ba4bc893075" width="260"/>
+<br/><b>🏠 Home Screen</b>
 </td>
 </tr>
 
 <tr>
 <td align="center">
-<img src="https://github.com/user-attachments/assets/6edca6c7-de4b-45ca-b781-7ba4bc893075" width="260"/>
+<img src="https://github.com/user-attachments/assets/f867cae8-a486-412b-baa0-45608e01301b" width="260"/>
 <br/><b>🛒 Shopping Cart</b>
 </td>
 <td align="center">
-<img src="https://github.com/user-attachments/assets/f867cae8-a486-412b-baa0-45608e01301b" width="260"/>
+<img src="https://github.com/user-attachments/assets/7dec9529-bfe8-40c3-97ce-e46bf6bf7e63" width="280"/>
 <br/><b>❤️ Wishlist</b>
 </td>
 </tr>
 </table>
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/7dec9529-bfe8-40c3-97ce-e46bf6bf7e63" width="280"/>
+
 <br/><b>✨ Beautiful Modern UI</b>
 </p>
 
