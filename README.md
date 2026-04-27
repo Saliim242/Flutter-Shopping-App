@@ -11,11 +11,99 @@ A modern, sleek Flutter e-commerce application built with clean architecture and
 - 🏠 **Home Screen**: Browse featured products with stunning product cards
 - 🛍️ **Product Catalog**: View detailed product information with cached images
 - 🛒 **Shopping Cart**: Add/remove items with real-time cart updates
+- ❤️ **Wishlist**: Save favorite products for later (Student Assignment Implementation)
 - 🎨 **Beautiful UI**: Modern design with smooth animations and shimmer effects
 - 📱 **Cross-Platform**: Runs on Android, iOS, Web, Windows, Linux, and macOS
 - 🔄 **State Management**: Powered by Provider for efficient state handling
+- 🔔 **Badge Notifications**: Real-time badge counts for cart items (extendable to wishlist)
 
-## 🚀 Getting Started
+## � Student Assignment: Add Wishlist Functionality
+
+**🎓 Assignment Objective:** Implement a complete wishlist feature following the existing app architecture and design patterns.
+
+### Assignment Requirements
+
+**Phase 1: Setup and Dependencies**
+1. Add the `badges` package to `pubspec.yaml`:
+   ```yaml
+   dependencies:
+     badges: ^3.1.2
+   ```
+2. Run `flutter pub get` to install the new dependency
+
+**Phase 2: Create WishlistProvider**
+1. Create `lib/providers/wishlist_provider.dart`
+2. Implement the following methods:
+   - `addToWishlist(ProductModel product)` - Add product if not already in wishlist
+   - `removeFromWishlist(ProductModel product)` - Remove specific product
+   - `toggleWishlist(ProductModel product)` - Add if not present, remove if present
+   - `isInWishlist(ProductModel product)` - Check if product exists in wishlist
+   - `get totalWishlistItems` - Return count of wishlist items
+   - `clearWishlist()` - Remove all items
+
+**Phase 3: Update App Architecture**
+1. Add `WishlistProvider` to `main.dart` in the `MultiProvider`
+2. Import the new provider in `main.dart`
+
+**Phase 4: Update ProductCard Component**
+1. Import `WishlistProvider` in `product_Card.dart`
+2. Make the heart icon functional:
+   - Change icon from `Iconsax.heart` to filled `Iconsax.heart5` when in wishlist
+   - Change color to red when in wishlist
+   - Add `onTap` to toggle wishlist status
+   - Show appropriate snackbar messages
+
+**Phase 5: Update AppBar with Badges**
+1. Import `badges` package in `home_view.dart`
+2. Import `WishlistProvider` in `home_view.dart`
+3. Wrap both heart and cart icons with `Badge` widgets
+4. Display item counts in badges (only show badge when count > 0)
+5. Add navigation to wishlist view when heart icon is tapped
+
+**Phase 6: Create WishlistView**
+1. Create `lib/views/wishlist_view.dart`
+2. Follow the same structure as `CartView` but adapted for wishlist:
+   - AppBar with title "My Wishlist"
+   - Clear wishlist action button
+   - Empty state with appropriate messaging
+   - List of wishlist items with remove functionality
+   - Each item should show product image, name, description, price
+   - Remove button for each item
+
+### Implementation Guidelines
+
+- **Follow Existing Patterns**: Use the same code style and structure as `CartProvider` and `CartView`
+- **State Management**: Use Provider pattern consistently
+- **UI Consistency**: Match the design language of existing components
+- **User Feedback**: Provide snackbar messages for all user actions
+- **Navigation**: Implement proper navigation between screens
+- **Error Handling**: Handle edge cases (empty wishlist, duplicate additions)
+
+### Testing Checklist
+
+- [ ] Heart icon changes color and fill when tapped
+- [ ] Badge shows correct count for wishlist items
+- [ ] Badge shows correct count for cart items
+- [ ] Wishlist view displays added items
+- [ ] Can remove items from wishlist view
+- [ ] Can clear entire wishlist
+- [ ] Navigation works between screens
+- [ ] SnackBar messages appear for all actions
+- [ ] No duplicate items in wishlist
+- [ ] App doesn't crash with empty states
+
+### Learning Outcomes
+
+By completing this assignment, students will learn:
+- Advanced state management with multiple providers
+- Working with external packages (badges)
+- Implementing complex UI interactions
+- Following existing code architecture
+- Creating new screens and navigation
+- Handling user interactions and feedback
+- Managing app-wide state across multiple screens
+
+## �🚀 Getting Started
 
 ### Prerequisites
 
@@ -99,6 +187,7 @@ just_eccomerce_app/
 - **cached_network_image**: Image caching and loading
 - **iconsax**: Modern icon pack
 - **gap**: Spacing widget for Flutter
+- **badges**: Badge widgets for notifications (to be added by students)
 
 ### Development Dependencies
 
@@ -137,9 +226,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Author**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **Author**: Salim Abukar Ahmed
+- **GitHub**: [@Saliim242](https://github.com/Saliim242)
 
 ---
 
