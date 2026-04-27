@@ -103,6 +103,15 @@ By completing this assignment, students will learn:
 - Handling user interactions and feedback
 - Managing app-wide state across multiple screens
 
+## �🚀 Project Image Design 
+
+<img width="1344" height="2992" alt="Screenshot_1777288005" src="https://github.com/user-attachments/assets/dee99d59-c39b-46db-84bd-9f30db593dd3" />
+<img width="1344" height="2992" alt="Screenshot_1777205749" src="https://github.com/user-attachments/assets/1685f0f5-04a8-4a0d-8746-9b2414545a00" />
+<img width="1344" height="2992" alt="Screenshot_1777288050" src="https://github.com/user-attachments/assets/6edca6c7-de4b-45ca-b781-7ba4bc893075" />
+<img width="1344" height="2992" alt="Screenshot_1777288019" src="https://github.com/user-attachments/assets/f867cae8-a486-412b-baa0-45608e01301b" />
+<img width="1344" height="2992" alt="Screenshot_1777288012" src="https://github.com/user-attachments/assets/7dec9529-bfe8-40c3-97ce-e46bf6bf7e63" />
+
+
 ## �🚀 Getting Started
 
 ### Prerequisites
