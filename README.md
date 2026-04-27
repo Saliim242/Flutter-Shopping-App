@@ -128,7 +128,7 @@ By completing this assignment, students will learn:
 <br/><b>🛒 Shopping Cart</b>
 </td>
 <td align="center">
-<img src="https://github.com/user-attachments/assets/7dec9529-bfe8-40c3-97ce-e46bf6bf7e63" width="280"/>
+<img src="https://github.com/user-attachments/assets/7dec9529-bfe8-40c3-97ce-e46bf6bf7e63" width="260"/>
 <br/><b>❤️ Wishlist</b>
 </td>
 </tr>
